@@ -33,6 +33,14 @@ class Product:
         Label(titulo, text = 'Cod_prod:  ').grid(row = 5, column = 0)
         self.cod_prod = Entry(titulo)
         self.cod_prod.grid(row = 6, column = 0)
+        #Creacion de descripción en un imput
+        Label(titulo, text = 'Descripción:  ').grid(row = 5, column = 1)
+        self.descripcion = Entry(titulo)
+        self.descripcion.grid(row = 6, column = 1)
+        #Creacion de unidad en un imput
+        Label(titulo, text = 'Unidad:  ').grid(row = 5, column = 2)
+        self.unidad = Entry(titulo)
+        self.unidad.grid(row = 6, column = 2)
 #para ejecutar tinker
 if __name__ == '__main__':
     window = Tk()
