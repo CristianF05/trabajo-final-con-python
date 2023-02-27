@@ -17,6 +17,14 @@ class Product:
         Label(titulo, text = 'Apellido:').grid(row = 2, column = 0)
         self.apellido = Entry(titulo)
         self.apellido.grid(row = 2, column = 1)
+        #creacion de nombre en un imput
+        Label(titulo, text = 'Nombre: ').grid(row = 2, column = 2)
+        self.nombre = Entry(titulo)
+        self.nombre.grid (row = 2, column = 3)
+        #creacion de Direccion en un imput
+        Label(titulo, text = 'Direccion:  ').grid(row = 3, column = 0)
+        self.direccion = Entry(titulo)
+        self.direccion.grid(row = 3, column = 1)
 #para ejecutar tinker
 if __name__ == '__main__':
     window = Tk()
