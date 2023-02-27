@@ -41,6 +41,18 @@ class Product:
         Label(titulo, text = 'Unidad:  ').grid(row = 5, column = 2)
         self.unidad = Entry(titulo)
         self.unidad.grid(row = 6, column = 2)
+        #Creacion de cantidad en un imput
+        Label(titulo, text = 'Cantidad:  ').grid(row = 5, column = 3)
+        self.cantidad = Entry(titulo)
+        self.cantidad.grid(row = 6, column = 3)
+        #Creacion de precio en un imput
+        Label(titulo, text = 'Precio:  ').grid(row = 5, column = 4)
+        self.precio = Entry(titulo)
+        self.precio.grid(row = 6, column = 4)
+        #Creacion de suptotal en un imput
+        Label(titulo, text = 'Suptotal:  ').grid(row = 5, column = 5)
+        self.suptotal = Entry(titulo)
+        self.suptotal.grid(row = 6, column = 5)
 #para ejecutar tinker
 if __name__ == '__main__':
     window = Tk()
