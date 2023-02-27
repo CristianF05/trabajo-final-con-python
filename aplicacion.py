@@ -53,6 +53,10 @@ class Product:
         Label(titulo, text = 'Suptotal:  ').grid(row = 5, column = 5)
         self.suptotal = Entry(titulo)
         self.suptotal.grid(row = 6, column = 5)
+        #Creacion de total en un imput
+        Label(titulo, text = 'TOTAL:  ').grid(row = 8, column = 6)
+        self.total = Entry(titulo)
+        self.total.grid(row = 7, column = 6)
 #para ejecutar tinker
 if __name__ == '__main__':
     window = Tk()
