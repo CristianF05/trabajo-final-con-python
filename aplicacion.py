@@ -12,6 +12,8 @@ class Product:
         #Creacion de DNI Imput
         Label(titulo, text = 'DNI: ').grid(row = 1, column = 0)
         self.DNI = Entry(titulo)
+        #comandos para que la barra de escribir aparesca en DNI
+        self.DNI.focus()
         self.DNI.grid(row = 1, column = 1)
         #Creacion de Apellido en un Imput
         Label(titulo, text = 'Apellido:').grid(row = 2, column = 0)
@@ -24,7 +26,7 @@ class Product:
         #creacion de Direccion en un imput
         Label(titulo, text = 'Direccion:  ').grid(row = 3, column = 0)
         self.direccion = Entry(titulo)
-        self.direccion.grid(row = 3, column = 1)
+        self.direccion.grid(row = 3, column = 1, sticky = W + E)
         #Creacion de telefono en un imput
         Label(titulo, text = 'Telefono:  ').grid(row = 4, column = 0)
         self.direccion = Entry(titulo)
