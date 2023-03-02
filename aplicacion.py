@@ -62,5 +62,6 @@ class Product:
 #para ejecutar tinker
 if __name__ == '__main__':
     window = Tk()
+    window.config(width=1000, height=300)
     application = Product(window)#para mantener un mejor orden
     window.mainloop()
